@@ -1,4 +1,11 @@
-# 🐍 Snake and Ladder Game
+# 🐍 Snake and Ladder Game (Web)
+
+🎮 **Live Game:**  
+👉 https://tara-24.github.io/snake-and-ladder-web/
+
+## 🌐 Live Demo
+You can play the game here:  
+👉 https://tara-24.github.io/snake-and-ladder-web/
 
 A browser-based **Snake and Ladder game** built using **HTML, CSS, and JavaScript**.  
 This project was created as a learning-focused game to understand **programming logic, UI updates, and game flow**.
@@ -37,6 +44,14 @@ The goal of this project was to:
 - Basic animations
 
 ---
+## 📚 What I Learned
+- DOM manipulation
+- Event handling
+- Asynchronous JavaScript (async/await)
+- Game state management
+- Deploying projects using GitHub Pages
+
+---
 
 ## 🛠️ Technologies Used
 
@@ -47,4 +62,5 @@ The goal of this project was to:
 ---
 
 ## 📂 Project Structure
+
 
