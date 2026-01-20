@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#game-board {
+  width: 420px;
+  height: 420px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  border: 4px solid #333;
+}
+
+.cell {
+  border: 1px solid #aaa;
+  padding: 4px;
+  font-size: 14px;
+  position: relative;
+}
+
+.player {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 4px;
+}
+
+.p1 {
+  background: blue;
+  left: 4px;
+}
+
+.p2 {
+  background: red;
+  right: 4px;
+}
+
+#dice-box {
+  font-size: 32px;
+  margin: 10px;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#board-wrapper {
+  position: relative;
+  width: 420px;
+  height: 420px;
+  margin: 20px auto;
+}
+
+#snakes-ladders {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 420px;
+  height: 420px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+#game-board {
+  position: relative;
+  z-index: 1;
+}
+
+.ladder {
+  stroke: #8b5a2b;
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+
+.snake {
+  stroke: green;
+  stroke-width: 6;
+  fill: none;
+  stroke-linecap: round;
+}
+#confetti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.confetti-piece {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  animation: fall 3s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
